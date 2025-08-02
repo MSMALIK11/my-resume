@@ -1,183 +1,4 @@
-<!-- a<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Mohd Shoaib – MERN Stack Developer</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 900px;
-      margin: auto;
-      /* padding: 30px; */
-      background: #f4f7fa;
-    }
-    h1, h2, h3 {
-      color: #0b3954;
-    }
-    h1 {
-      font-size: 32px;
-    }
-    h2 {
-      border-bottom: 2px solid #0b3954;
-      padding-bottom: 5px;
-      margin-top: 10px;
-    }
-    p, li {
-      font-size: 15px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .header, .section {
-      margin-bottom: 10px;
-    }
-    .header h1{
-text-align: center;
-margin-bottom: -10px;
-    }
-    .header p{
-text-align: center;
-    }
-    .role-date {
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-    }
-    .button-container {
-      text-align: right;
-      /* margin-top: 15px; */
-      margin-bottom:-90px;
-    }
-    .download-btn {
-      background-color: #0b3954;
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .download-btn:hover {
-      background-color: #062636;
-    }
-    #resume{
-      padding: 10px;
-    }
-  </style>
-</head>
-<body >
 
-  <div class="button-container">
-    <button class="download-btn" onclick="downloadResume()">Download PDF</button>
-  </div>
-
- <div id="resume">
-  <div class="header">
-    <h1>Mohd Shoaib</h1>
-    <p>
-  Noida, Uttar Pradesh | 7300519548 | msm76441@gmail.com | 
-  <a href="https://www.linkedin.com/in/mohd-shoaib-757178371/" target="_blank">LinkedIn</a> | 
-  <a href="https://github.com/MSMALIK11" target="_blank">GitHub</a>
-</p>
-  </div>
-
-  <div class="section">
-    <h2>Professional Summary</h2>
-    <p>Results-driven and detail-oriented Software Engineer with over 3 years of hands-on experience developing robust full-stack web and desktop applications. Proficient in modern JavaScript technologies including React.js, Node.js, and Electron.js. Proven track record in building scalable and high-performance systems for drone mapping, educational platforms, and banking automation. Strong advocate of clean code, secure APIs, modular design, and Agile workflows.</p>
-  </div>
-
-  <div class="section">
-    <h2>Technical Skills</h2>
-    <p><strong>Frontend:</strong> React.js, Next.js, Vue.js, Tailwind CSS, Redux Toolkit, MUI</p>
-    <p><strong>Backend & APIs:</strong> Node.js, Express.js, MongoDB, RESTful APIs, JWT Authentication</p>
-    <p><strong>Tools & DevOps:</strong> Git, Electron.js, AWS, React Query</p>
-    <p><strong>Other:</strong> MERN Stack, CesiumJS, Mapbox, OpenLayers, Agile/Scrum</p>
-  </div>
-
-<div class="section">
-  <h2>Experience</h2>
-
-  <div class="role-date">
-    <div>Botlab Dynamics (IIT Delhi)</div>
-    <div>June 2024 – Present</div>
-  </div>
-  <p><strong>Role:</strong> Software Engineer (Full-time)</p>
-  <ul>
-    <li><strong>Flight Planner:</strong> Built a 2D map-based UAV flight planning tool using OpenLayers and React. Included dynamic path drawing, live animation of drones, and geofence restrictions.</li>
-    
-    <li><strong>Survey Photo Upload App:</strong> Developed a full-stack platform to upload, store, and manage drone survey images. Integrated AWS S3 for image storage, handled backend API with Node.js, and created a responsive dashboard using Next.js.</li>
-
-    <li><strong>Orthophoto Viewer:</strong> Rendered high-resolution orthophotos on an interactive OpenLayers map. Implemented measurement tools (distance, area), flight path animation, and image annotation tools for marking errors.</li>
-
-    <li><strong>3D Model Viewer & Analysis Tool:</strong> Rendered 3D terrain models using CesiumJS and Re:Cesium. Developed tools for measuring height, volume, and analyzing surface-level deviations.</li>
-  </ul>
-  <p><strong>Tech Stack:</strong> Next.js, React.js, Tailwind CSS, Node.js, AWS S3, CesiumJS, Re:Cesium, OpenLayers</p>
-
-  <div class="role-date">
-    <div>Liberin Technologies Pvt. Ltd.</div>
-    <div>July 2022 – June 2024</div>
-  </div>
-  <p><strong>Role:</strong> Software Developer (Full-time)</p>
-  <ul>
-    <li><strong>SmartBox Testing Tool:</strong> Developed a desktop-based automation and monitoring tool for testing banking locker systems. Real-time hardware integration using Electron.js.</li>
-    
-    <li><strong>Report Portal:</strong> Created a portal for managing client reports and operational analytics. Added role-based dashboards and integrated real-time data visualization.</li>
-  </ul>
-  <p><strong>Tech Stack:</strong> Electron.js, Vue.js, React.js, Redux Toolkit, Jest, REST APIs</p>
-</div>
-
-
-  <div class="section">
-    <h2>Personal Projects</h2>
-
-    <h3>📚 Learning Management System (LMS)</h3>
-    <ul>
-      <li>Secure login/signup with JWT authentication.</li>
-      <li>Developed a full-featured LMS platform allowing admins to manage courses and lectures.</li>
-      <li>Implemented role-based access (RBAC) with JWT-based authentication and secure routing.</li>
-      <li>Enabled students to enroll, view video lectures, and track progress on dashboards.</li>
-    </ul>
-    <p><strong>Tech Stack:</strong> React.js, Node.js, MongoDB, JWT, Tailwind CSS</p>
-
-    <h3>📝 Test Book – Quiz Management System</h3>
-    <ul>
-      <li>Admin panel for quiz creation and user analytics.</li>
-      <li>Scalable Quiz Management System for educational platforms.</li>
-      <li>JWT authentication for secure login/signup.</li>
-      <li>Admin creates courses, quiz sets, manages quizzes.</li>
-      <li>Users attempt quizzes and track performance.</li>
-      <li>Intuitive dashboards for admins and users.</li>
-    </ul>
-    <p><strong>Tech Stack:</strong> React.js, Node.js, MongoDB, JWT, Redux Toolkit</p>
-  </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MCA</strong> – Glocal University, Saharanpur (2024–2025)</li>
-      <li><strong>BCA</strong> – Glocal University, Saharanpur (2019–2022)</li>
-    </ul>
-  </div>
- </div>
-
-  <script>
-    function downloadResume() {
-      const resume = document.getElementById("resume");
-      const opt = {
-        margin: [0.1, 0.2],
-        filename: 'Mohd_Shoaib_MERN_Stack_Developer_3_years_experience_Resume.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-      html2pdf().set(opt).from(resume).save();
-    }
-  </script>
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -334,17 +155,14 @@ ul {
   </div>
   <div>June 2024 – Present</div>
 </div>
-    <p><strong>Scope:</strong> Led full-stack development and AWS deployment of drone data visualization tools, collaborating cross-functionally with GIS and operations teams.</p>
+    <p><strong>Drone Survey Management System:</strong> Led full-stack development and AWS deployment of drone data visualization tools, collaborating cross-functionally with GIS and operations teams.</p>
 
-<ul>
-  <li><strong>Flight Planner:</strong> Engineered a 2D UAV mission planning tool using OpenLayers and React. Enabled dynamic path drawing, geofence enforcement, and real-time drone animation to simulate flight behavior.</li>
-
-  <li><strong>Survey Photo Upload Platform (Full-Stack):</strong> Developed and deployed a secure Next.js-based platform for uploading, storing, and managing drone survey images. Built robust RESTful APIs in Node.js, integrated AWS S3 for scalable storage, and implemented role-based dashboards. Deployed frontend and backend on AWS EC2 with CI/CD pipelines.</li>
-
-  <li><strong>Orthophoto Viewer:</strong> Created an interactive viewer to render high-resolution orthophotos with OpenLayers. Integrated tools for distance/area measurement, animated flight overlays, and annotation support for field issue tracking.</li>
-
-  <li><strong>3D Terrain Viewer & Analysis Tool:</strong> Rendered photogrammetry-based 3D terrains using CesiumJS and Re:Cesium. Designed tools for height, volume measurement, and deviation analysis, aiding drone operations with precise insights.</li>
-</ul>
+  <ul>
+        <li><strong>Flight Planner:</strong> Developed a 2D mission planning tool using OpenLayers and React.js, supporting custom path drawing, geofence constraints, and drone path animation for simulations.</li>
+        <li><strong>Survey Image Upload Platform:</strong> Engineered a secure full-stack solution (Next.js + Node.js) for uploading and managing drone survey images. Integrated AWS S3 for scalable storage and implemented role-based dashboards. Deployed via AWS EC2 with CI/CD.</li>
+        <li><strong>3D Model & Orthophoto Viewer:</strong> Built a viewer using CesiumJS and OpenLayers to visualize orthophotos and 3D reconstructions. Included distance measuring tools, annotation, and drone path playback.</li>
+        <li><strong>Dynamic PDF Report Generator:</strong> Created a tool that compiles inspection data and uploaded images into structured PDF reports. Users input inspection details (e.g., defect type, annotations), then generate standardized reports for stakeholders.</li>
+      </ul>
 
 <p><strong>Tech Stack:</strong> Next.js, React.js, Tailwind CSS, Node.js, Express.js, MongoDB, AWS (S3, EC2), CI/CD (GitHub Actions), CesiumJS, Re:Cesium, OpenLayers</p>
 
@@ -357,11 +175,6 @@ ul {
 </div>
 <ul>
   <li><strong>DwAR Studio – Web AR Project Builder:</strong> Spearheaded the development of a full-fledged WebAR platform using React.js, Three.js, and MindAR. Designed a smooth user experience for building marker-based AR experiences without prior AR expertise.</li>
-  <ul>
-    <li><strong>User-Friendly Interface:</strong> Designed intuitive UI for seamless project creation, even for non-technical users.</li>
-    <li><strong>Advanced AR Capabilities:</strong> Integrated Three.js and MindAR to enable real-time, interactive AR rendering in the browser.</li>
-    <li><strong>Performance Optimization:</strong> Performed rigorous testing, debugging, and optimization for smooth AR experiences across devices.</li>
-  </ul>
 </ul>
 
 <ul>
@@ -378,17 +191,18 @@ ul {
     </div>
 
    <div class="section">
-  <h3>Test Book – Quiz Management System <a target="_blank" href="https://github.com/MSMALIK11/kartvya-server" class="link">API's</a></h3>
+  <h3>Personal Project: Test Book – Quiz Management System 
+    <a target="_blank" href="https://github.com/MSMALIK11/kartvya-server" class="link">View API</a>
+  </h3>
   <ul>
-    <li>Designed and developed a full-stack Quiz Management System tailored for educational use cases.</li>
-    <li>Built a secure admin panel for creating quizzes, managing users, and viewing analytics.</li>
-    <li>Implemented JWT-based authentication for secure login and route protection.</li>
-    <li>Integrated role-based access control (RBAC) to distinguish admin and user privileges.</li>
-    <li>Enabled students to enroll in quizzes, submit answers, and track performance through interactive dashboards.</li>
-    <li>Built intuitive UI using Shadcn UI and managed state effectively using Redux Toolkit.</li>
+    <li>Engineered a full-stack Quiz Management System designed for scalable educational use cases.</li>
+    <li>Developed a secure and user-friendly admin panel to manage quizzes, users, and view analytics dashboards.</li>
+    <li>Implemented JWT-based authentication to secure login sessions and protect sensitive routes.</li>
+    <li>Established robust Role-Based Access Control (RBAC) to enforce differentiated permissions for admins and users.</li>
   </ul>
   <p><strong>Tech Stack:</strong> React.js, Redux Toolkit, Shadcn UI, Node.js, Express.js, MongoDB, JWT Authentication</p>
 </div>
+
 
 
    <div class="section">
